@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TODO List</title>
+    <link rel="stylesheet" href="vanilla.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body onload="countUpdate()">
+    <section class="container">
+        <div class="heading">
+            <h1 class="heading-title">My TODO List</h1>
+        </div>
+        <div>Completed: <span class="completed-count">0 of 0</span> items</div>
+        <button id="js-save" class="button save">Save</button>
+        <section class="todo__add">
+            <div class="todo__title-style" id="js-label-add">
+                <label for="js-new-task" class="section__title section__title--add">Add Item</label>
+            </div>
+            <input id="js-new-task" class="text-input task__input--new" type="text">
+            <button id="js-add-button" class="button"><i class="material-icons icon__add">add_circle</i></button>
+        </section>
+        <section class="todo__list">
+            <div class="todo__title-style todo__title-style--todo" id="js-todo">
+                <h3 class="section__title">To-do</h3>
+            </div>
+            <ul id="js-incomplete-tasks" class="list">
+            </ul>
+        </section>
+        <section class="todo__done">
+            <div class="todo__title-style" id="js-completed">
+                <h3 class="section__title">Completed</h3>
+            </div>
+            <ul id="js-completed-tasks" class="list">
+            </ul>
+        </section>
+    </section>
+    <script src="vanilla.js"></script>
+</body>
+
+</html>

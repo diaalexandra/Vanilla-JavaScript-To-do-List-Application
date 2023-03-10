@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Material+Icons');
+
+body {
+    background-color: #816767;
+    color: black;
+    font-family: 'Dancing Script', serif;
+    min-height: 70vh;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 150%;
+}
+
+.container {
+    background: #ffb0da;
+    background-image: linear-gradient(#ffb0da, white, #ffb0da);
+    border-radius: 20px;
+    box-shadow: 7px 3px 7px 3px black;
+    height: auto;
+    width: auto;
+    padding: 1rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-title {
+    padding: 0.5rem 1.3rem;
+    background: #f556aa;
+    border-radius: 50%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li * {
+    float: left;
+}
+
+li, h3 {
+    clear: both;
+}
+
+.todo__done {
+    padding-top: 18px;
+}
+
+.button {
+    color: black;
+    background: transparent;
+    border: 0;
+    float: right;
+    width: 20px;
+    margin-top: 7px;
+    margin-left: 3px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #f556aa;
+}
+
+.section__title {
+    color: black;
+    border-bottom : 2px solid black;
+    font-weight: 900;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section__title--add {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+.task__title, .task__checkbox {
+    cursor: pointer;
+}
+
+.task {
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: 1px solid white;
+}
+
+.task__checkbox {
+    margin-left: 10px;
+    position: relative;
+    top: 15px;
+}
+
+.task__title {
+    font-size: 16px;
+    line-height: 16px;
+    width: 290px;
+    padding: 12px 0 10px 11px;
+    margin-left: 45px;
+}
+
+.task__input {
+    width: 285px;
+}
+
+.task__input--new {
+    float: left;
+    width: 410px;
+}
+
+.task__input--new:focus {
+    border-color: hsl(0, 0%, 66%);
+}
+
+.text-input {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+    padding: 10px;
+    border: 1px solid white;
+    background:white;
+    border-radius: 6px;
+    font-family: 'Dancing Script', serif;
+    color: black;
+}
+
+.todo__title-style--todo {
+    margin-bottom: 10px;
+}
+
+.icon__add:hover {
+    background-color: #816767;
+}
+
+.material-icons {
+    font-size: 22px;
+}
+
+.task__delete:hover {
+    color: #f556aa;
+}
+
+.task__input {
+    display: none;
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+    padding: 10px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 6px;
+    font-family: 'Dancing Script', serif;
+    color: grey;
+}
+
+.task__input:focus {
+    border-color: white;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(128, 128, 128, 0.512);
+}
+
+.save {
+    width              : auto;
+    font-size          : 16px;
+    text-align         : left;
+    font-weight        : bold;
+    text-transform     : uppercase;
+    color              : #FEFEFE;
+    position           : relative;
+    top                : -46px;
+    padding            : 12px;
+    border-radius      : 5px;
+    background-color   : magenta;
+    box-shadow         : 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
+    transition-property: color, background-color;
+    transition         : .3s ease-in-out;
+}
+
+.save:hover,
+.save:focus,
+.save:active {
+    background-color: lime;
+    color           : #FEFEFE;
+}
+
+.alert {
+    margin: 200px auto;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    background: white;
+    border-radius: 100px;
+    border: 5px double #f556aa;
+}
+
+.alert__button {
+    height: 25px;
+    width: 50px;
+    border-radius: 3px;
+}
+
+.alert__button--yes:hover {
+    color: white;
+    background-color: magenta;
+}
+
+.alert__button--no {
+    margin-left: 10px;
+    margin-right: 70px;
+}
+
+.alert__button--no:hover {
+    color: white;
+    background-color: lime;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-done {
+    text-decoration: line-through;
+    color: black;
+}
+
+.is-editing .task__input {
+    display: block;
+}
+
+.is-editing .task__title {
+    display: none;
+    margin-top: 1px;
+    margin-bottom: 4px;
+    padding: 9px 0 9px 11px;
+}
